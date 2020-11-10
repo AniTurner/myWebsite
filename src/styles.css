@@ -1,0 +1,368 @@
+html {
+    background-color: #222;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    font-size: 1em;
+    line-height: 1.4;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+body {
+    height: 70vh;
+}
+
+
+/* NAVBAR */
+.navbar-container {
+    background: #181818;
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 3;
+    min-height: 500px;
+    margin-left: -8px;
+    padding-left: 0;
+}
+.logo {
+    background: #d3d3d3;
+    display: block;
+    padding: 8px 0;
+}
+
+.logo img {
+    display: block;
+    width: 60px;
+    height: auto;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.en {
+    font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.navbar-container nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-container nav.active {
+    color: #08fdd8;
+
+}
+.navbar-container nav .link {
+    line-height: 51px;
+    height: auto;
+}
+
+.navbar-container nav img {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+
+}
+
+.navbar-container span {
+    opacity: 0;
+    position:absolute; 
+    top:0; 
+    left:0; 
+    opacity:0;
+}
+
+.navbar-container span:hover {
+    opacity: 1;
+    font-size: 20px;
+    color: #a5a5a5;
+    position: relative;
+    text-decoration: none; 
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+    line-height: 51px;
+    height: 51px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navbar-container div {
+    margin: 7px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    line-height: 16px;
+    color: #909096; 
+    text-align: center;
+}
+
+.linkedin {
+    width: 35px;
+    height: auto;
+    cursor: pointer;
+}
+
+.twitter {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.github {
+    width: 25px;
+    height: auto;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+/* MAIN BODY */
+.text-zone {
+    width: 700px;
+    text-align: left;
+    margin-left: 100px;
+    float: left;
+
+}
+.top-tags {
+    color: #515152;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    font-size: 12px;
+    font-family: 'La Belle Aurore', cursive;
+    letter-spacing: 3px;
+}
+
+.bottom-tags {
+    color: #515152;
+    position: absolute;
+    bottom: 50px;
+    left: 140px;
+    font-size: 12px;
+    font-family: 'La Belle Aurore', cursive;
+    letter-spacing: 3px;
+}
+
+.html-tags {
+    bottom: 15px;
+    color: #515152;
+    position: absolute;
+    left: 80px;
+    font-size: 12px;
+    font-family: 'La Belle Aurore', cursive;
+    letter-spacing: 3px;
+}
+
+.bottom-h1-tags {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    position: absolute;
+    color: #515152;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    bottom: 320px;
+    left: 630px;
+    letter-spacing: 3px;
+}
+
+.top-h1-tags {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    position: absolute;
+    color: #515152;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    top: 220px;
+    left: 80px;
+    letter-spacing: 3px;  
+}
+
+.main-container h1:hover {
+    color: #41f264;
+}
+
+.contact-me-button {
+    color: #41f264;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #41f264;
+    margin-top: 25px;
+    float: left;
+    animation: myanim2 1s 1.8s backwards;
+}
+
+.contact-me-button:hover {
+    background-color: #41f264;
+    color: #222;
+}
+.main-container h1 {
+    color: #fff;
+    font-size: 65px;
+    line-height: 53px;
+    margin: 0;
+    font-family: rude;
+    font-weight: normal;
+    display: block;
+    margin-top: 250px;
+
+}
+
+.main-container h2 {
+    color: #8d8d8d;
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+}
+
+#second-text {
+    margin-top: 10px;
+
+}
+
+#third-text {
+    margin-top: 10px;
+}
+
+@media (min-height: 900px) and (min-width: 1100px) {
+    h1 {
+        font-size: 73px !important;
+        line-height: 67px !important;
+    }
+}
+
+/* CONTACT */
+
+.contact-container {
+    color: white;
+    margin-left: 150px;
+}
+
+
+/* ABOUT ME */
+
+.aboutme-container, .contact-container, .skills-container, .aboutme-container {
+    font-family: rude;
+
+}
+
+.aboutme-text {
+    margin-top: 300px;
+    color: #41f264;
+}
+
+.aboutme-h2 {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    width: 600px;
+    line-height: 30px;
+}
+
+.aboutme-pic {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 380px;
+    height: 600px;
+    -webkit-box-shadow: 6px 7px 18px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 7px 18px 2px rgba(0,0,0,0.75);
+    box-shadow: 6px 7px 18px 2px rgba(0,0,0,0.75);
+}
+
+.mywork-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 50px 1fr;
+}
+
+.box {
+    background-color: white;
+}
+
+#num1 {
+    margin-top: 50px;
+    width: auto;
+    height: 340px;
+    grid-column: 2 / span 1;
+    background-color: red;
+}
+
+#num2 {
+    margin-top: 50px;
+    width: auto;
+    height: 340px;
+    grid-column: 4 / span 1;
+    background-color: pink;
+}
+
+#num3 {
+    margin-top: 400px;
+    width: auto;
+    height: 340px;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+    background-color: yellow;
+}
+
+#num4 {
+    margin-top: 400px;
+    width: auto;
+    height: 340px;
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    background-color: green;
+}
+
+#Rain div {
+    background-color: #d3d3d31f;
+    height: 50px;
+}
+
+/* SKILLS */
+
+.skills-text {
+    margin-top: 300px;
+    color: #41f264;
+    word-wrap: break-word;
+    width: 500px;
+}
+
+.lastP {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    width: 600px;
+    line-height: 30px;
+}
+
+.aT {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    width: 600px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #41f264;
+}
+
+
