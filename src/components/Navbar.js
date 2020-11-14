@@ -11,19 +11,34 @@ export default function Navbar() {
         </Link>
         <nav className="en">
           <Link to="/" className="link">
+          <div className='home-group'>
             <img className="icon-home" src="icons/homeIcon.png" alt="home logo" />
+            <img className="image-top" src="greenIcons/homeIconGreen.png" alt="home logo" />
+          </div>
           </Link>
           <Link to="/aboutme" className="link">
+          <div className='profile-group'>
             <img className="icon-profile" src="icons/aboutMeIcon.png" alt="home logo"></img>
+            <img className="image-top" src="greenIcons/aboutMeIconGreen.png" alt="home logo"></img>
+          </div>
           </Link>
           <Link rel="skills" to="/skills" className="link">
+          <div className='skills-group'>
             <img className="icon-gear" src="icons/skillsIcon.png" alt="home logo"></img>
+            <img className="image-top" src="greenIcons/skillsIconGreen.png" alt="home logo"></img>
+          </div>
           </Link>
           <Link rel="gallery" to="/mywork" className="link">
+          <div className='myWork-group'>
             <img className="icon-eye" src="icons/myWorkIcon.png" alt="home logo"></img>
+            <img className="image-top" src="greenIcons/myWorkIconGreen.png" alt="home logo"></img>
+          </div>
           </Link>
           <Link rel="contact"  to="/contactme" className="link">
+            <div className='contact-group'>
             <img className="icon-mail" src="icons/contactIcon.png" alt="home logo"></img>
+            <img className="image-top" src="greenIcons/contactIconGreen.png" alt="home logo"></img>
+            </div>
           </Link>
         </nav>
         <div>

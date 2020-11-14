@@ -64,18 +64,31 @@ img {
     height: auto;
 }
 
-.navbar-container nav img {
+.navbar-container nav div {
     width: 40px;
     height: auto;
     cursor: pointer;
     display: block;
     margin: 10px;
-
+    position: relative;
 }
+
+.navbar-container nav div .image-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navbar-container nav div:hover .image-top {
+    display: inline
+}
+
 
 .navbar-container span {
     opacity: 0;
-    position:absolute; 
+    position: absolute; 
     top:0; 
     left:0; 
     opacity:0;
