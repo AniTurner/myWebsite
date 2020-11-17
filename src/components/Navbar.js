@@ -42,14 +42,17 @@ export default function Navbar() {
           </Link>
         </nav>
         <div>
-          <a href="https://github.com/AniTurner" rel="noopener noreferrer" target="_blank">
+          <a className='github-group' href="https://github.com/AniTurner" rel="noopener noreferrer" target="_blank">
             <img className="github" src="icons/githubIcon.png" alt="home logo"></img>
+            <img className="g-image-top" src="greenIcons/githubIconColor.png" alt="home logo"></img>
           </a>
-          <a href="https://www.linkedin.com/in/ani-turner/" rel="noopener noreferrer" target="_blank">
+          <a className='linked-group' href="https://www.linkedin.com/in/ani-turner/" rel="noopener noreferrer" target="_blank">
             <img className="linkedin" src="icons/linkedinIcon.png" alt="home logo"></img>
+            <img className="l-image-top" src="greenIcons/linkedinIconColor.png" alt="home logo"></img>
           </a>
-          <a href="https://twitter.com/turnerani1" rel="noopener noreferrer" target="_blank">
+          <a className='twitter-group' href="https://twitter.com/turnerani1" rel="noopener noreferrer" target="_blank">
             <img className="twitter" src="icons/twitterIcon.png" alt="home logo"></img>
+            <img className="t-image-top" src="greenIcons/twitterIconColor.png" alt="home logo"></img>
           </a>
         </div>
       </div>
